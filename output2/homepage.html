@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage · School Grades Portal</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body class="homepage-body">
+  <!-- main navigation for logged-in area (static demo) -->
+  <header class="home-header">
+    <div class="header-left">
+      <div class="logo-icon">📚</div>
+      <h2>Kanto Buan High School</h2>
+    </div>
+    <nav class="home-nav">
+      <a href="#" class="nav-link active">Dashboard</a>
+      <a href="#" class="nav-link">Grades</a>
+      <a href="#" class="nav-link">Assignments</a>
+      <a href="#" class="nav-link">Schedule</a>
+      <a href="#" class="nav-link">Reports</a>
+    </nav>
+    <div class="user-menu">
+      <span class="user-name">Alex Chen</span>
+      <div class="avatar">👤</div>
+    </div>
+  </header>
+
+  <main class="homepage-main">
+    <!-- welcome banner -->
+    <section class="welcome-banner">
+      <div class="welcome-text">
+        <h1>Welcome, Alex! 👋</h1>
+        <p>Spring semester 2026 · Grade 11 · Student ID: 20251187</p>
+      </div>
+      <div class="date-badge">
+        <span class="current-date">Thursday, March 19, 2026</span>
+      </div>
+    </section>
+
+    <!-- quick stats cards -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📊</div>
+        <div class="stat-content">
+          <span class="stat-label">Current GPA</span>
+          <span class="stat-value">3.85</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📝</div>
+        <div class="stat-content">
+          <span class="stat-label">Completed Credits</span>
+          <span class="stat-value">42</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-content">
+          <span class="stat-label">Honor Roll</span>
+          <span class="stat-value">Yes</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📅</div>
+        <div class="stat-content">
+          <span class="stat-label">Attendance</span>
+          <span class="stat-value">96%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- two-column layout for recent grades + announcements -->
+    <div class="home-columns">
+      <!-- left column: recent grades & assignments -->
+      <section class="recent-grades">
+        <div class="section-header">
+          <h3>Recent Grades & Assignments</h3>
+          <a href="#" class="view-link">View all →</a>
+        </div>
+        <div class="grades-list">
+          <div class="grade-item">
+            <div class="grade-course">
+              <span class="course-name">General Chemistry</span>
+              <span class="assignment-name">Lab Report: Titration</span>
+            </div>
+            <div class="grade-badge A">A-</div>
+          </div>
+          <div class="grade-item">
+            <div class="grade-course">
+              <span class="course-name">English Literature</span>
+              <span class="assignment-name">Essay: Romantic Poets</span>
+            </div>
+            <div class="grade-badge A">A</div>
+          </div>
+          <div class="grade-item">
+            <div class="grade-course">
+              <span class="course-name">Pre-Calculus</span>
+              <span class="assignment-name">Quiz 7: Trigonometry</span>
+            </div>
+            <div class="grade-badge B">B+</div>
+          </div>
+          <div class="grade-item">
+            <div class="grade-course">
+              <span class="course-name">Aralin Panlipunan</span>
+              <span class="assignment-name">Chapter 12 Test</span>
+            </div>
+            <div class="grade-badge A">A-</div>
+          </div>
+          <div class="grade-item">
+            <div class="grade-course">
+              <span class="course-name">Filipino</span>
+              <span class="assignment-name">Oral Presentation</span>
+            </div>
+            <div class="grade-badge pending">Not graded</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right column: announcements & upcoming -->
+      <section class="announcements">
+        <div class="section-header">
+          <h3>Announcements & Reminders</h3>
+          <a href="#" class="view-link">View all →</a>
+        </div>
+        <div class="announcements-list">
+          <div class="announcement-item important">
+            <div class="announcement-icon">📢</div>
+            <div class="announcement-content">
+              <span class="announcement-title">Summer Break begins April 12</span>
+              <span class="announcement-meta">Posted by Principal · 2 hours ago</span>
+            </div>
+          </div>
+          <div class="announcement-item">
+            <div class="announcement-icon">📝</div>
+            <div class="announcement-content">
+              <span class="announcement-title">4th Quarter Exams begins in April 6</span>
+              <span class="announcement-meta">Guidance Office · 1 day ago</span>
+            </div>
+          </div>
+          <div class="announcement-item">
+            <div class="announcement-icon">🏀</div>
+            <div class="announcement-content">
+              <span class="announcement-title">Basketball game vs. HCC – Fri 7pm</span>
+              <span class="announcement-meta">Athletics · 3 days ago</span>
+            </div>
+          </div>
+          <div class="announcement-item">
+            <div class="announcement-icon">💰</div>
+            <div class="announcement-content">
+              <span class="announcement-title">Scholarship deadline extended to 4/10</span>
+              <span class="announcement-meta">Counseling · 5 days ago</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- simple footer -->
+  <footer class="home-footer">
+    <p>© 2026 Kanto Buan High School · <a href="index.html">Log out</a> · <a href="#">Help</a> · <a href="#">Privacy</a></p>
+  </footer>
+</body>
+</html>

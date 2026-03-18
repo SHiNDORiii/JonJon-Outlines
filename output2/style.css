@@ -1,0 +1,319 @@
+/* style.css – School Grades Portal Login Theme (with Sign Up button) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+  background: linear-gradient(145deg, #e0f2fe 0%, #bae6fd 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* main card */
+.portal-wrapper {
+  max-width: 460px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: #ffffffec; /* fallback */
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px -12px rgba(0, 35, 70, 0.35),
+              0 8px 24px -6px rgba(0, 50, 90, 0.2);
+  padding: 2.2rem 2rem 2rem 2rem;
+  transition: transform 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* header with icon */
+.portal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-icon {
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+  filter: drop-shadow(2px 4px 4px rgba(0, 60, 120, 0.2));
+}
+
+.portal-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #0f2b4b;
+  margin-bottom: 0.25rem;
+  text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.8);
+}
+
+.subhead {
+  color: #2c4c6e;
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+/* form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+/* input groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a3b5c;
+  letter-spacing: 0.3px;
+  margin-left: 0.2rem;
+}
+
+.input-group input {
+  padding: 0.9rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 60px;
+  font-size: 1rem;
+  outline: none;
+  background: white;
+  transition: border 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+}
+
+.input-group input:focus {
+  border-color: #2f7eb6;
+  box-shadow: 0 0 0 4px rgba(47, 126, 182, 0.15);
+}
+
+.input-group input::placeholder {
+  color: #9bb4cc;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+/* role selector (custom radio) */
+.role-selector {
+  background: #f8fafd;
+  border-radius: 60px;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #dbe5f0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2rem 0 0.4rem;
+}
+
+.role-label {
+  font-weight: 600;
+  color: #234b73;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+}
+
+.role-options {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.role-option {
+  display: inline-flex;
+  align-items: center;
+  cursor: default;  /* no JS, just static */
+  gap: 0.3rem;
+  color: #1e3e61;
+  font-size: 0.95rem;
+}
+
+.role-option input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid #b9cfec;
+  border-radius: 50%;
+  margin: 0;
+  background: white;
+  transition: 0.1s;
+  cursor: default;
+}
+
+.role-option input[type="radio"]:checked {
+  border: 5px solid #1d6faa;
+  background: white;
+}
+
+.radio-custom {
+  line-height: 1;
+}
+
+/* login button */
+.login-btn {
+  background: #1d4f7c;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 60px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  box-shadow: 0 10px 18px -8px #1d4f7c99;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 0.6rem;
+}
+
+.login-btn:hover {
+  background: #0e3e64;
+  box-shadow: 0 12px 22px -8px #0e3e64cc;
+  transform: scale(1.02);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 12px -6px #0b2f4b;
+}
+
+/* sign-up prompt — new button style */
+.signup-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: #e6f0fa;
+  border-radius: 60px;
+  padding: 0.7rem 1.5rem;
+  margin: 0.2rem 0 0.2rem;
+  border: 1px solid #b9d1ec;
+}
+
+.prompt-text {
+  color: #1f4870;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.signup-btn {
+  background: #2e7d5e;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 4px 10px -4px #1b5e45;
+  transition: background-color 0.15s, transform 0.1s, box-shadow 0.15s;
+  display: inline-block;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.signup-btn:hover {
+  background: #1e5f46;
+  box-shadow: 0 8px 14px -6px #12412f;
+  transform: scale(1.03);
+}
+
+.signup-btn:active {
+  transform: scale(0.97);
+  background: #174e39;
+}
+
+/* footer links */
+.form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #2b6a9e;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.1s;
+}
+
+.footer-link:hover {
+  border-bottom: 1px dashed #2b6a9e;
+}
+
+.separator {
+  color: #a0bbd4;
+  font-weight: 300;
+}
+
+/* demo hint */
+.demo-hint {
+  background: #eaf3fb;
+  border-radius: 40px;
+  padding: 0.6rem 1.2rem;
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px dashed #7ba9d0;
+}
+
+.demo-hint p {
+  color: #22527a;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* portal footer */
+.portal-footer {
+  margin-top: 1.6rem;
+  text-align: center;
+  border-top: 1px solid #caddf0;
+  padding-top: 1rem;
+  color: #446b8f;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* small screens */
+@media (max-width: 420px) {
+  .portal-wrapper {
+    padding: 1.5rem 1.2rem;
+  }
+  .role-selector {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 30px;
+  }
+  .role-options {
+    gap: 0.8rem;
+  }
+  .portal-header h1 {
+    font-size: 1.9rem;
+  }
+  .signup-prompt {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+  }
+}

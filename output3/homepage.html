@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard · GradePortal</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- animated background (matching alt login) -->
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+  <div class="bg-shape bg-shape-3"></div>
+
+  <!-- main app container -->
+  <div class="dashboard-container">
+    <!-- sidebar navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">🎓 Grade<span>Portal</span></div>
+        <div class="school-badge">Kanto Buan Academy</div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">📝</span>
+          <span>My Grades</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">💬</span>
+          <span>Messages</span>
+          <span class="badge">3</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings</span>
+        </a>
+
+      </nav>
+      
+      <div class="sidebar-footer">
+        <div class="user-info-compact">
+          <div class="user-avatar">👤</div>
+          <div class="user-details">
+            <span class="user-name">Alex Chen</span>
+            <span class="user-role">Grade 11 Student</span>
+          </div>
+        </div>
+        <a href="index.html" class="logout-link">🚪 Log out</a>
+      </div>
+    </aside>
+
+    <!-- main content area -->
+    <main class="main-content">
+      <!-- top header -->
+      <header class="content-header">
+        <div class="header-left">
+          <h1 class="page-title">Dashboard</h1>
+          <div class="date-display">Tuesday, March 17, 2026</div>
+        </div>
+        <div class="header-right">
+          <div class="header-user">
+            <span class="header-user-name">Alex Chen</span>
+            <div class="header-avatar">👤</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- welcome banner -->
+      <div class="welcome-card">
+        <div class="welcome-message">
+          <h2>Welcome, Alex! 👋</h2>
+          <p>Spring semester · Student ID: 20251187 · GPA: 3.85</p>
+        </div>
+        <div class="welcome-action">
+          <span class="semester-badge">Semester 2 · 2026</span>
+        </div>
+      </div>
+
+      <!-- stats grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📊</div>
+          <div class="stat-content">
+            <span class="stat-value">3.85</span>
+            <span class="stat-label">Current GPA</span>
+          </div>
+          <div class="stat-trend positive">↑ 0.2</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-content">
+            <span class="stat-value">96%</span>
+            <span class="stat-label">Attendance</span>
+          </div>
+          <div class="stat-trend positive">↑ 2%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div class="stat-content">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Active Courses</span>
+          </div>
+          <div class="stat-trend">+2 this sem</div>
+        </div>
+      </div>
+
+      <!-- two column layout -->
+      <div class="dashboard-grid">
+        <!-- left column: current courses & grades -->
+        <div class="grid-left">
+          <section class="card">
+            <div class="card-header">
+              <h3>Current Courses</h3>
+              <a href="#" class="card-link">View all →</a>
+            </div>
+            <div class="courses-list">
+              <div class="course-item">
+                <div class="course-info">
+                  <span class="course-name">General Chemistry</span>
+                  <span class="course-teacher">Dr. Martinez</span>
+                </div>
+                <div class="course-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 78%"></div>
+                  </div>
+                  <span class="course-grade">A- (89%)</span>
+                </div>
+              </div>
+              <div class="course-item">
+                <div class="course-info">
+                  <span class="course-name">English Literature</span>
+                  <span class="course-teacher">Ms. Washington</span>
+                </div>
+                <div class="course-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 92%"></div>
+                  </div>
+                  <span class="course-grade">A (92%)</span>
+                </div>
+              </div>
+              <div class="course-item">
+                <div class="course-info">
+                  <span class="course-name">Pre-Calculus</span>
+                  <span class="course-teacher">Mr. Thompson</span>
+                </div>
+                <div class="course-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 81%"></div>
+                  </div>
+                  <span class="course-grade">B+ (81%)</span>
+                </div>
+              </div>
+              <div class="course-item">
+                <div class="course-info">
+                  <span class="course-name">Aralin Panlipunan</span>
+                  <span class="course-teacher">Prof. Davis</span>
+                </div>
+                <div class="course-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 87%"></div>
+                  </div>
+                  <span class="course-grade">A- (87%)</span>
+                </div>
+              </div>
+              <div class="course-item">
+                <div class="course-info">
+                  <span class="course-name">Filipino</span>
+                  <span class="course-teacher">Señora García</span>
+                </div>
+                <div class="course-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 79%"></div>
+                  </div>
+                  <span class="course-grade">B+ (79%)</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <div class="grid-right">
+          <section class="card">
+            <div class="card-header">
+              <h3>Announcements</h3>
+              <a href="#" class="card-link">View all →</a>
+            </div>
+            <div class="announcements-list">
+              <div class="announcement-item important">
+                <div class="announcement-icon">📢</div>
+                <div class="announcement-content">
+                  <span class="announcement-title">Summer Break begins April 11</span>
+                  <span class="announcement-meta">Principal · 2 hours ago</span>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-icon">📝</div>
+                <div class="announcement-content">
+                  <span class="announcement-title">4th Quarter Exams in April 6</span>
+                  <span class="announcement-meta">Guidance · 1 day ago</span>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-icon">🏀</div>
+                <div class="announcement-content">
+                  <span class="announcement-title">Basketball game vs. HCC – Fri 7pm</span>
+                  <span class="announcement-meta">Athletics · 3 days ago</span>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-icon">💰</div>
+                <div class="announcement-content">
+                  <span class="announcement-title">Scholarship deadline extended</span>
+                  <span class="announcement-meta">Counseling · 5 days ago</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <br>
+
+      <footer class="dashboard-footer">
+        <p>© 2026 Kanto Buan Academy <a href="index.html">Log out</a></p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
